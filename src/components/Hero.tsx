@@ -19,32 +19,32 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Trova la tua
+            <span className="block">Trova lavoro</span>
             <span className="block bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
-              donna delle pulizie
+              nelle pulizie
             </span>
-            in un click
+            <span className="block text-2xl md:text-3xl font-normal mt-2">o trova chi pulisce per te</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Connetti con professioniste qualificate nella tua zona. 
-            Prenotazioni facili, servizio garantito.
+            <strong>Collaboratori:</strong> Iscriviti gratis e inizia a guadagnare subito<br/>
+            <strong>Clienti:</strong> Prenota servizi di qualità con recensioni verificate
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 shadow-lg text-lg px-8 py-6"
+              className="bg-accent text-white hover:bg-accent/90 shadow-lg text-lg px-8 py-6 animate-pulse"
             >
-              <MapPin className="mr-2 h-5 w-5" />
-              Trova ora
+              <Users className="mr-2 h-5 w-5" />
+              Lavora con noi - GRATIS
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+              className="bg-white text-primary hover:bg-white/90 shadow-lg text-lg px-8 py-6"
             >
-              Diventa addetta
+              <MapPin className="mr-2 h-5 w-5" />
+              Trova collaboratori
             </Button>
           </div>
 
